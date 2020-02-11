@@ -27,8 +27,8 @@ var endDate = new Date(thisDay.getTime() + 14*24*60*60*1000);
 
 //DO NOT CHANGE THE i VALUE IN THIS LOOP 
 /* Loop through the eventDates array */
-for (var i = 0; i <= eventDate.length; i++) {
-   var eventDate = new date(eventDates[i]);
+for (var i = 0; i <= eventDates.length; i++) {
+   var eventDate = new Date(eventDates[i]);
    var eventDay = eventDate.toDateString();
    var eventTime = eventDate.toLocaleTimeString();
    
@@ -45,5 +45,5 @@ for (var i = 0; i <= eventDate.length; i++) {
 tableHTML += "</table>";
 
 /* Write the HTML code into the eventList box */
-document.getElementById("eventList").innerHTML.textContent += tableHTML;
+document.getElementById("eventList").innerHTML = tableHTML;
 
